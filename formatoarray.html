@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+
+    <script>
+        var strl='ahmed&ferah-moez&saadi-fadhel&gadihi'
+        var a=strl.split('-')
+        var b=a.map(nom=>nom.split('&'));
+        var c=b.map(nom =>  `[firstname:${nom[0]},secondname:${nom[1]}]`)
+        console.log(c)
+
+    </script>
+</body>
+
+</html>

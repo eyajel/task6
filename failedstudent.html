@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const etudiants = [
+            { name : "sarah" , note : undefined },
+            { name : "monya" , note : 7 },
+            { name : "carlos" , note : 13 },
+            { name : "fadhel" , note : 18 }]
+        const b=etudiants.filter(etudiant=>etudiant.note!==undefined)
+        const c=b.sort((a,b)=>b.note-a.note)
+        const d=c.map(etudiant=>(etudiant.note>=10)? `['name:'${etudiant.name},'note:'${etudiant.note},"mention :Bien"]`:`['name:'${etudiant.name},'note:'${etudiant.note},"mention :Passable"]`)
+        console.log(d)
+    </script>
+</body>
+</html>
